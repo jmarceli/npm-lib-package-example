@@ -1,2 +1,20 @@
 // @flow
-// add your TYPES here
+export type RateLimit = {
+  limit: number,
+  remaining: number,
+  reset: number
+};
+
+export type RateLimitResponse = {
+  resources: {
+    core: RateLimit,
+    search: RateLimit,
+    graphql: RateLimit,
+  },
+  rate: RateLimit,
+};
+
+// IMPORTANT! export functions which are exported by your package to avoid Flow errors
+// while importing package to other project (or your own tests)
+declare export function getRateLimitResponse(): Promise<RateLimitResponse>;
+declare export function isValidResponseData(data: any): boolean;

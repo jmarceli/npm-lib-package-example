@@ -1,12 +1,12 @@
 {
-  "name": "npm-lib-package-boilerplate",
+  "name": "npm-lib-package-example",
   "version": "0.0.1",
   "description": "Example of NPM library package build with Babel, Rollup, Jest, Flow, ESLint and Travis CI",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmarceli/npm-lib-package-boilerplate.git"
+    "url": "https://github.com/jmarceli/npm-lib-package-example.git"
   },
   "author": "Jan Grzegorowski <grzegorowski@gmail.com>",
   "license": "MIT",
@@ -25,11 +25,13 @@
     "node": ">= 8.x"
   },
   "keywords": [
-    "lib-package-boilerplate",
-    "package-boilerplate",
-    "nodejs-package-boilerplate"
+    "lib-package-example",
+    "package-example",
+    "nodejs-package-example"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -49,6 +51,7 @@
     "flow-typed": "^2.5.1",
     "husky": "^1.0.1",
     "jest": "^23.6.0",
+    "jest-mock-axios": "^2.1.11",
     "rimraf": "^2.6.2",
     "rollup": "^0.66.2",
     "rollup-plugin-babel": "3",
