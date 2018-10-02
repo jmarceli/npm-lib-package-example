@@ -12,6 +12,31 @@ Read detailed description/tutorial on https://www.grzegorowski.com/publishing-np
 3. `babel-plugin-rewire` is used in tests to show how non-exported functions might be tested
 4. `jest-mock-axios` packages and **__mocks__/** directory shows how to test Axios based calls
 
+# Installation
+
+```
+yarn add npm-lib-package-example
+```
+
+# Usage
+
+Despite the fact that this package has no point to exists, you may still use it in your script.
+Start your file with `// @flow` if you are using Flow type checking.
+
+```
+// @flow
+
+const getRateLimitResponse = require('npm-lib-package-example').getRateLimitResponse;
+// or with Babel: import { getRateLimitResponse } from 'npm-lib-package-example';
+
+const start = async () => {
+  const result = await getRateLimitResponse();
+  console.log(result);
+};
+
+start();
+```
+
 # License
 
 [MIT](./LICENSE)
