@@ -16,9 +16,14 @@ const queryApi = async (endpoint: string): Promise<$AxiosXHR<RateLimitResponse>>
 // Get rate limits
 const getRateLimitResponse = async (): Promise<RateLimitResponse> => {
   const result = await queryApi('rate_limit');
+
   if (!isValidResponseData(result.data)) {
-    throw new Error(`Invalid response from Github API: ${JSON.stringify(result.data)}`);
+    // just a spread operator test to ensure it is compiled properly
+    const { data } = { ...result };
+
+    throw new Error(`Invalid response from Github API: ${JSON.stringify(data)}`);
   }
+
   return result.data;
 };
 

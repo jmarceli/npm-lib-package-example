@@ -21,7 +21,7 @@ const plugins = targets => ([
   }),
 ]);
 
-const external = [];
+const external = ['axios'];
 
 export default [{
   input: 'src/index.js',
