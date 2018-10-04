@@ -3,7 +3,7 @@ NPM lib package example
 
 [![Build Status](https://travis-ci.org/jmarceli/npm-lib-package-example.svg?branch=master)](https://travis-ci.org/jmarceli/npm-lib-package-example) [![dependencies Status](https://david-dm.org/jmarceli/npm-lib-package-example/status.svg)](https://david-dm.org/jmarceli/npm-lib-package-example) [![devDependencies Status](https://david-dm.org/jmarceli/npm-lib-package-example/dev-status.svg)](https://david-dm.org/jmarceli/npm-lib-package-example?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Read detailed description/tutorial on https://www.grzegorowski.com/publishing-npm-package-with-rollup-babel-and/.
+Read detailed description/tutorial on https://www.grzegorowski.com/publishing-npm-package-with-rollup-babel-and/ or check boilerplate repository https://github.com/jmarceli/npm-lib-package-boilerplate to get more info.
 
 # Overview
 
